@@ -3,7 +3,7 @@ This script monitors a public Trello board for changes and sends notifications t
 
 ## Setup
 1.  **Create a Repository from Template**:
-    Click the "Use this template" button on the this repo to get your own version.
+    Click the "Use this template" button on this repo to get your own version.
 
 2.  **Configure GitHub Secrets**:
     In your new repository, go to `Settings` -> `Secrets and variables` -> `Actions` -> `New repository secret`.
@@ -20,5 +20,4 @@ This script monitors a public Trello board for changes and sends notifications t
     The script will create and update a `board_state.json` file in your repository to store the board's previous state. This file is automatically committed back to the repository by Actions.
 
 ## Local Setup
-
 If you wish to run the script locally, install Node.js and Dotenv, then create a `.env` file with `TRELLO_JSON_URL` and `DISCORD_WEBHOOK_URL`. Finally, run `node index.js`.
