@@ -19,6 +19,7 @@ jobs:
       - run: node index.js
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          TRELLO_JSON_URL: ${{ secrets.TRELLO_JSON_URL }}
       - run: |
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
